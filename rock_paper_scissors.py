@@ -183,4 +183,6 @@ def callback_handler(call):
         bot.send_message(call.message.chat.id, "Сыграем?", reply_markup=markup)
 
 
-bot.polling(none_stop=True, interval=0)
+if __name__ == '__main__':
+    print('-------------бот начал работу--------------')
+    bot.infinity_polling()
